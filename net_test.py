@@ -136,23 +136,7 @@ with dpg.window(label="Excel_Matrix-NET_CCF 変換システム(TEST)", width=670
                 dpg.add_button(label="取   消", width=100, height=26, callback=lambda: dpg.stop_dearpygui())
         with dpg.tab(label="Help"):
             dpg.add_text("This is the help page.", color=[255, 0, 0])
-            # table_layout_test
-            # with dpg.tooltip("file_path_name"):
-            #     dpg.add_text("The file path you have selected.")
-            # with dpg.table(tag="layout_demo_table", header_row=False, borders_innerH=False,
-            #                borders_outerH=False, borders_innerV=False, borders_outerV=False):
-            #     dpg.add_table_column()
-            #     dpg.add_table_column()
-            #     with dpg.table_row():
-            #         dpg.add_input_text(source='file_path_name', width=-1)
-            #         dpg.add_button(label="File Selector", callback=lambda: dpg.show_item("file_dialog_id"), width=-1)
-            #     with dpg.table_row(height=30):
-            #         dpg.add_table_cell()
-            #         dpg.add_table_cell()
-            #     with dpg.table_row():
-            #         dpg.add_button(label="変 換", tag="submit1", width=-1)
-            #         dpg.add_button(label="取 消", tag="exit1", width=-1)
-
+     
 with dpg.window(label="結果", tag="popup1", show=False, width=150, height=100, pos=[300, 230]):
     dpg.add_text("変換完了。", tag="pop_contents")
     dpg.add_button(label="OK", width=100, height=26, callback=lambda: dpg.configure_item("popup1", show=False))
